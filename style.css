@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
+}
+
+img {
+    width: 100%;
+}
+
+.container{
+    max-width: 390px;
+}
+
+.inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+img {
+    width: 190px;
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+}
+
+.item {
+    text-align: center;
+    margin: 3px;
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+}
+
+img:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
